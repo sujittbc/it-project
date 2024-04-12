@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Alrashid Trading Center</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e6da33;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e6da33;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact section */
+        .contact-section {
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact form */
+        .contact-form {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contact details */
+        .contact-details h3 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            margin: 5px 0;
+        }
+
+        /* Map container */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <!-- Contact Form -->
+            <form class="contact-form" action="/submit_form" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <!-- Contact Details -->
+            <div class="contact-details mt-4">
+                <h3>Contact Details</h3>
+                <p><strong>Address:</strong> Kathmandu, Nepal</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Email:</strong> alrashid@gmail.com</p>
+                <p><strong>Working Hours:</strong> Monday-Friday, 9:00 AM - 5:00 PM</p>
+            </div>
+
+            <!-- Google Map -->
+        <img src="map.jpeg" alt="map" width="70%">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Appointment Booking</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e6da33;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e6da33;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form heading */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        /* Button styles */
+        button {
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Book an Appointment</h2>
+        
+        <!-- Salon Appointment Booking Form -->
+        <form action="#" method="POST">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+                <label for="phone">Your Phone:</label>
+                <input type="tel" name="phone" id="phone" class="form-control" required>
+            </div>
+
+            <!-- Appointment Date Field -->
+            <div class="form-group">
+                <label for="date">Appointment Date:</label>
+                <input type="date" name="date" id="date" class="form-control" required>
+            </div>
+
+            <!-- Appointment Time Field -->
+            <div class="form-group">
+                <label for="time">Appointment Time:</label>
+                <input type="time" name="time" id="time" class="form-control" required>
+            </div>
+
+            <!-- Service Selection -->
+            <div class="form-group">
+                <label for="service">Select Service:</label>
+                <select name="service" id="service" class="form-control" required>
+                    <option value="">--Select a Service--</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="styling">Styling</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <!-- Add other services as needed -->
+                </select>
+            </div>
+
+            <!-- Message (Optional) -->
+            <div class="form-group">
+                <label for="message">Additional Notes:</label>
+                <textarea name="message" id="message" class="form-control" placeholder="Any specific requests?" rows="3"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+ <!-- Footer -->
+ <div class="footer">
+    <p>&copy; 2024 Alrashid Trading Center. All Rights Reserved.</p>
+</div>
